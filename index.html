@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2178bb" />
+    <meta name="description" content="Metmma Pharmacy in Nanjiri, Lilongwe. Friendly pharmacy care and everyday health essentials." />
+    <title>Metmma Pharmacy | Your friendly pharmacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#home" aria-label="Metmma Pharmacy home">
+          <img src="assets/metmma-logo.png" alt="" />
+          <span>Metmma Pharmacy</span>
+        </a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#about">About</a><a href="#services">Services</a><a href="#team">The Team</a><a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <div class="mobile-menu-top"><span>Menu</span><button type="button" aria-label="Close navigation" class="menu-close">×</button></div>
+        <a href="#about">About <b>›</b></a><a href="#services">Services <b>›</b></a><a href="#team">The Team <b>›</b></a><a href="#contact">Contact <b>›</b></a>
+        <strong>Your Friendly Pharmacy.</strong>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-inner">
+          <div class="hero-copy"><p class="eyebrow">Care that feels close to home</p><h1><span>Your Friendly</span><br />Pharmacy<span class="period">.</span></h1><p class="hero-subtitle">Come by and get your medication.</p><a class="hero-link" href="#contact">Visit us in Nanjiri <span>↗</span></a></div>
+          <div class="hero-art" aria-hidden="true"><div class="art-glow"></div><img src="assets/medicine.png" alt="" /></div>
+          <a class="scroll-cue" href="#about"><span></span>Scroll to explore</a>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="section-heading"><p class="eyebrow green-text">A little about us</p><h2>About</h2><p>A background of Metmma Pharmacy.</p></div>
+        <div class="about-grid wrap">
+          <div class="about-note"><span class="note-mark">✳</span><p>Metmma Pharmacy is a business company established in 2026. We’re here to make trusted pharmacy care feel friendly, easy and close to home.</p><span class="hashtag">#metmma_pharmacy</span></div>
+          <div class="about-visual"><div class="visual-cross">+</div><div class="about-visual-copy"><span>Good health,<br />closer to home.</span><small>Nanjiri · Lilongwe</small></div></div>
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="wrap"><div class="section-heading light-heading"><p class="eyebrow">Here when you need us</p><h2>Services</h2></div>
+          <div class="service-grid">
+            <article class="service-card"><span class="service-icon">＋</span><h3>Prescription care</h3><p>Friendly support with your prescribed medicines and everyday pharmacy needs.</p><span class="card-number">01</span></article>
+            <article class="service-card"><span class="service-icon">♡</span><h3>Health essentials</h3><p>Find trusted health and personal care essentials for you and your family.</p><span class="card-number">02</span></article>
+            <article class="service-card"><span class="service-icon">✳</span><h3>Health guidance</h3><p>Our team is happy to help you find the right next step for your wellbeing.</p><span class="card-number">03</span></article>
+            <article class="service-card"><span class="service-icon">◷</span><h3>Local convenience</h3><p>Accessible pharmacy care for our community in Nanjiri, Lilongwe.</p><span class="card-number">04</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="team section" id="team">
+        <div class="wrap"><div class="section-heading light-heading"><p class="eyebrow">Here to help</p><h2>Meet The Team</h2><p>A friendly face is always ready to help.</p></div>
+          <div class="team-grid">
+            <article class="team-card"><div class="team-photo pharmacist"><span>MP</span></div><div class="team-info"><h3>Pharmacist</h3><p>Care, advice &amp; prescriptions</p></div><span class="team-arrow">↗</span></article>
+            <article class="team-card"><div class="team-photo cashier"><span>MP</span></div><div class="team-info"><h3>Cashier</h3><p>Here to make your visit easy</p></div><span class="team-arrow">↗</span></article>
+            <article class="team-card"><div class="team-photo support"><span>MP</span></div><div class="team-info"><h3>Support Staff</h3><p>Making sure you feel welcome</p></div><span class="team-arrow">↗</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="wrap"><div class="section-heading"><p class="eyebrow green-text">We'd love to hear from you</p><h2>Contact Us</h2></div>
+          <div class="contact-grid">
+            <div class="form-card">
+              <form id="contact-form" novalidate>
+                <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" placeholder="Enter your full name" autocomplete="name" required minlength="2" /></div>
+                <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="Enter your email address" autocomplete="email" required /></div>
+                <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="How can we help you?" required minlength="10"></textarea></div>
+                <p class="form-note">Your message will be ready to send to the Metmma Pharmacy team.</p>
+                <button class="button button-green" type="submit">Send message <span>→</span></button>
+                <p class="form-feedback" id="contact-feedback" role="status" aria-live="polite"></p>
+              </form>
+              <div class="success-panel" id="success-panel" hidden><span class="success-check">✓</span><h3>Form preview submitted</h3><p>This is a static preview; no message has been sent. Add the pharmacy email or a message service to enable delivery.</p><button class="button button-green" id="back-to-form" type="button">Back to contact form</button></div>
+            </div>
+            <aside class="contact-details"><p class="detail-intro">Questions about a medicine or planning a visit? Get in touch or come say hello.</p><div class="detail-divider"></div>
+              <div class="detail-item"><span class="detail-icon">☎</span><div><h3>Phone</h3><p>Phone number to be added</p></div></div>
+              <div class="detail-item"><span class="detail-icon">✉</span><div><h3>Email</h3><p>Email address to be added</p></div></div>
+              <div class="detail-item"><span class="detail-icon">⌖</span><div><h3>Address</h3><p>Nanjiri · Lilongwe, Malawi</p></div></div>
+              <div class="detail-foot"><span>Metmma Pharmacy</span><small>Here for your health, every day.</small></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="find-us section" id="location">
+        <div class="wrap"><div class="section-heading light-heading"><p class="eyebrow">Find your way to us</p><h2>Find Us</h2><p>Drop by for friendly local pharmacy care.</p></div>
+          <div class="location-grid"><a class="map-card" href="https://www.openstreetmap.org/search?query=Nanjiri%2C%20Lilongwe%2C%20Malawi" target="_blank" rel="noreferrer" aria-label="Find Nanjiri, Lilongwe on OpenStreetMap"><div class="map-grid"></div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><span class="map-pin">⌖</span><span class="map-label">Nanjiri</span><span class="map-open">Open map ↗</span></a>
+            <div class="location-card"><p class="location-lead">Your neighborhood pharmacy is just around the corner.</p><div class="detail-divider"></div><div class="detail-item"><span class="detail-icon">⌖</span><div><h3>Location</h3><p>Nanjiri · Lilongwe, Malawi</p></div></div><div class="detail-item"><span class="detail-icon">◷</span><div><h3>Hours</h3><p>Opening hours to be added</p></div></div><div class="location-footer">Metmma Pharmacy <span>·</span> Serving our community</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter"><div class="wrap newsletter-inner"><div><p class="eyebrow">A little good news</p><h2>Stay in the loop.</h2><p>Updates and health tips, delivered occasionally.</p></div><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="Enter your email address" required /><button class="button button-green" type="submit">Subscribe <span>→</span></button><p class="newsletter-feedback" role="status" aria-live="polite"></p></form></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="wrap"><div class="footer-main"><a class="footer-brand" href="#home"><img src="assets/metmma-logo.png" alt="Metmma Pharmacy logo" /><span>Metmma<br />Pharmacy.</span></a><div class="footer-links"><p>Explore</p><a href="#about">About</a><a href="#services">Services</a><a href="#team">The Team</a><a href="#contact">Contact</a></div><div class="footer-social"><p>Follow Us</p><a href="https://www.instagram.com/" aria-label="Instagram">◎</a><a href="https://www.facebook.com/" aria-label="Facebook">f</a><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a></div><div class="footer-cta"><span>Care starts close to home.</span><a href="#contact">Get in touch ↗</a></div></div><div class="footer-bottom"><span>© 2026 Metmma Pharmacy.</span><a href="#home">Back to top ↑</a></div></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
