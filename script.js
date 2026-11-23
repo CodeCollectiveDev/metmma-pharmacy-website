@@ -20,12 +20,42 @@ const successPanel = document.querySelector('#success-panel');
 const contactFeedback = document.querySelector('#contact-feedback');
 const backToForm = document.querySelector('#back-to-form');
 
-contactForm.addEventListener('submit', (event) => {
+contactForm.addEventListener('submit', async (event) => {
   event.preventDefault();
   contactFeedback.textContent = '';
   if (!contactForm.reportValidity()) return;
-  contactForm.hidden = true;
-  successPanel.hidden = false;
+
+  const captchaResponse = contactForm.querySelector('[name="h-captcha-response"]');
+  if (!captchaResponse?.value) {
+    contactFeedback.textContent = 'Please complete the hCaptcha challenge before sending.';
+    return;
+  }
+
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  submitButton.disabled = true;
+  submitButton.setAttribute('aria-busy', 'true');
+  submitButton.firstChild.textContent = 'Sending… ';
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: new FormData(contactForm),
+    });
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || 'Unable to send your message right now.');
+    }
+
+    contactForm.hidden = true;
+    successPanel.hidden = false;
+  } catch (error) {
+    contactFeedback.textContent = error.message || 'Something went wrong. Please try again.';
+  } finally {
+    submitButton.disabled = false;
+    submitButton.removeAttribute('aria-busy');
+    submitButton.firstChild.textContent = 'Send message ';
+  }
 });
 
 backToForm.addEventListener('click', () => {

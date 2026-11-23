@@ -48,7 +48,7 @@
         <div class="section-heading"><p class="eyebrow green-text">A little about us</p><h2>About</h2><p>A background of Metmma Pharmacy.</p></div>
         <div class="about-grid wrap">
           <div class="about-note"><span class="note-mark">✳</span><p>Metmma Pharmacy is a business company established in 2026. We’re here to make trusted pharmacy care feel friendly, easy and close to home.</p><span class="hashtag">#metmma_pharmacy</span></div>
-          <div class="about-visual"><div class="visual-cross">+</div><div class="about-visual-copy"><span>Good health,<br />closer to home.</span><small>Nanjiri · Lilongwe</small></div></div>
+          <div class="about-visual about-building"><img src="public/pharmacybuldingoutside.jpg" alt="Metmma Pharmacy storefront in Nanjiri" /><div class="about-visual-copy"><span>Good health,<br />closer to home.</span><small>Nanjiri · Lilongwe</small></div></div>
         </div>
       </section>
 
@@ -66,9 +66,8 @@
       <section class="team section" id="team">
         <div class="wrap"><div class="section-heading light-heading"><p class="eyebrow">Here to help</p><h2>Meet The Team</h2><p>A friendly face is always ready to help.</p></div>
           <div class="team-grid">
-            <article class="team-card"><div class="team-photo pharmacist"><span>MP</span></div><div class="team-info"><h3>Pharmacist</h3><p>Care, advice &amp; prescriptions</p></div><span class="team-arrow">↗</span></article>
-            <article class="team-card"><div class="team-photo cashier"><span>MP</span></div><div class="team-info"><h3>Cashier</h3><p>Here to make your visit easy</p></div><span class="team-arrow">↗</span></article>
-            <article class="team-card"><div class="team-photo support"><span>MP</span></div><div class="team-info"><h3>Support Staff</h3><p>Making sure you feel welcome</p></div><span class="team-arrow">↗</span></article>
+            <article class="team-card"><div class="team-photo"><img src="public/mercy-pharmacists.jpg" alt="Mercy, Metmma Pharmacy pharmacist" /></div><div class="team-info"><h3>Mercy</h3><p>Pharmacist · Care, advice &amp; prescriptions</p></div><span class="team-arrow">↗</span></article>
+            <article class="team-card"><div class="team-photo"><img src="public/thokozani-cashier.jpg" alt="Thokozani, Metmma Pharmacy cashier" /></div><div class="team-info"><h3>Thokozani</h3><p>Cashier · Here to make your visit easy</p></div><span class="team-arrow">↗</span></article>
           </div>
         </div>
       </section>
@@ -78,14 +77,19 @@
           <div class="contact-grid">
             <div class="form-card">
               <form id="contact-form" novalidate>
+                <input type="hidden" name="access_key" value="eb7ddd6e-e8e3-43da-bccb-64cd6f2eebc5" />
+                <input type="hidden" name="subject" value="New contact message for Metmma Pharmacy" />
+                <input type="hidden" name="from_name" value="Metmma Pharmacy website" />
+                <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
                 <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" placeholder="Enter your full name" autocomplete="name" required minlength="2" /></div>
                 <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="Enter your email address" autocomplete="email" required /></div>
                 <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="How can we help you?" required minlength="10"></textarea></div>
-                <p class="form-note">Your message will be ready to send to the Metmma Pharmacy team.</p>
+                <div class="h-captcha" data-captcha="true"></div>
+                <p class="form-note">Your message will be sent to the Metmma Pharmacy team.</p>
                 <button class="button button-green" type="submit">Send message <span>→</span></button>
                 <p class="form-feedback" id="contact-feedback" role="status" aria-live="polite"></p>
               </form>
-              <div class="success-panel" id="success-panel" hidden><span class="success-check">✓</span><h3>Form preview submitted</h3><p>This is a static preview; no message has been sent. Add the pharmacy email or a message service to enable delivery.</p><button class="button button-green" id="back-to-form" type="button">Back to contact form</button></div>
+              <div class="success-panel" id="success-panel" hidden><span class="success-check">✓</span><h3>Message sent</h3><p>Thanks for contacting Metmma Pharmacy. Your message has been sent to the team.</p><button class="button button-green" id="back-to-form" type="button">Send another message</button></div>
             </div>
             <aside class="contact-details"><p class="detail-intro">Questions about a medicine or planning a visit? Get in touch or come say hello.</p><div class="detail-divider"></div>
               <div class="detail-item"><span class="detail-icon">☎</span><div><h3>Phone</h3><p>Phone number to be added</p></div></div>
@@ -99,7 +103,7 @@
 
       <section class="find-us section" id="location">
         <div class="wrap"><div class="section-heading light-heading"><p class="eyebrow">Find your way to us</p><h2>Find Us</h2><p>Drop by for friendly local pharmacy care.</p></div>
-          <div class="location-grid"><a class="map-card" href="https://www.openstreetmap.org/search?query=Nanjiri%2C%20Lilongwe%2C%20Malawi" target="_blank" rel="noreferrer" aria-label="Find Nanjiri, Lilongwe on OpenStreetMap"><div class="map-grid"></div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><span class="map-pin">⌖</span><span class="map-label">Nanjiri</span><span class="map-open">Open map ↗</span></a>
+          <div class="location-grid"><div class="pharmacy-gallery" aria-label="Inside Metmma Pharmacy"><img src="public/insidepharmacy1.jpg" alt="Medicine shelves and counter inside Metmma Pharmacy" /><img src="public/insidepharmacy2.jpg" alt="Interior view of Metmma Pharmacy" /></div><a class="map-card" href="https://www.openstreetmap.org/search?query=Nanjiri%2C%20Lilongwe%2C%20Malawi" target="_blank" rel="noreferrer" aria-label="Find Nanjiri, Lilongwe on OpenStreetMap"><div class="map-grid"></div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><span class="map-pin">⌖</span><span class="map-label">Nanjiri</span><span class="map-open">Open map ↗</span></a>
             <div class="location-card"><p class="location-lead">Your neighborhood pharmacy is just around the corner.</p><div class="detail-divider"></div><div class="detail-item"><span class="detail-icon">⌖</span><div><h3>Location</h3><p>Nanjiri · Lilongwe, Malawi</p></div></div><div class="detail-item"><span class="detail-icon">◷</span><div><h3>Hours</h3><p>Opening hours to be added</p></div></div><div class="location-footer">Metmma Pharmacy <span>·</span> Serving our community</div></div>
           </div>
         </div>
@@ -109,6 +113,7 @@
     </main>
 
     <footer class="site-footer"><div class="wrap"><div class="footer-main"><a class="footer-brand" href="#home"><img src="assets/metmma-logo.png" alt="Metmma Pharmacy logo" /><span>Metmma<br />Pharmacy.</span></a><div class="footer-links"><p>Explore</p><a href="#about">About</a><a href="#services">Services</a><a href="#team">The Team</a><a href="#contact">Contact</a></div><div class="footer-social"><p>Follow Us</p><a href="https://www.instagram.com/" aria-label="Instagram">◎</a><a href="https://www.facebook.com/" aria-label="Facebook">f</a><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a></div><div class="footer-cta"><span>Care starts close to home.</span><a href="#contact">Get in touch ↗</a></div></div><div class="footer-bottom"><span>© 2026 Metmma Pharmacy.</span><a href="#home">Back to top ↑</a></div></div></footer>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="script.js"></script>
   </body>
 </html>
